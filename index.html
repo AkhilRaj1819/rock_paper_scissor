@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rock Paper Scissors</h1>
+        </header>
+        <main>
+            <section class="scoreboard">
+                <div class="score player">
+                    <span>You</span>
+                    <span id="player-score">0</span>
+                </div>
+                <div class="vs">vs</div>
+                <div class="score computer">
+                    <span>Computer</span>
+                    <span id="computer-score">0</span>
+                </div>
+            </section>
+            <div class="round-info" id="round-info">Round 1/5</div>
+            <section class="choices">
+                <button class="choice" id="rock" aria-label="Rock">
+                    <span class="icon">🪨</span>
+                    <span>Rock</span>
+                </button>
+                <button class="choice" id="paper" aria-label="Paper">
+                    <span class="icon">📄</span>
+                    <span>Paper</span>
+                </button>
+                <button class="choice" id="scissors" aria-label="Scissors">
+                    <span class="icon">✂️</span>
+                    <span>Scissors</span>
+                </button>
+            </section>
+            <section class="results">
+                <div class="result-box">
+                    <div>Your choice</div>
+                    <div id="player-choice" class="choice-display">?</div>
+                </div>
+                <div class="result-box">
+                    <div>Computer's choice</div>
+                    <div id="computer-choice" class="choice-display">?</div>
+                </div>
+            </section>
+            <div class="message" id="message">Make your choice!</div>
+            <button class="reset-btn" id="reset-btn" disabled>Play Again</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
